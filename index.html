@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+      *{
+        font-family: sans-serif;
+        box-sizing: border-box;
+      }  
+
+      body{
+        margin:100px;
+        text-align: center;
+        font-size: 18px;
+      }
+
+      #mark{
+        font-size: 25px;
+        color: hsl(224, 30%, 27%);
+        color: whitesmoke;
+      }
+
+      #grt{
+        font-size:25px ;
+        color: hsl(0, 0%, 100%);
+        font-weight: 600;
+        font-size: 30px;
+      }
+
+      #para{
+        color: hsl(241, 100%, 89%);
+        font-size: 20px;
+      }
+
+      #marks{
+        text-align: center;
+        color: whitesmoke;
+        font-size: 80px;
+        font-weight: 600;
+        /* padding: 25px; */
+        background: hsl(241, 52%, 48%);
+        border-radius: 50%;
+        line-height:230px;
+        height: 230px;
+        width: 230px;
+        margin-left: 30%;
+      }
+
+    /* Classes for inserting colors in the marks section  */
+      .reaction{
+        background-color:hsla(0, 100%, 67%, 0.11);
+        color: hsl(0, 100%, 67%);
+      }
+
+      .memory{
+        color: hsl(39, 100%, 56%);
+        background-color: hsla(39, 100%, 56%,0.11);
+      }
+      .verbal{
+        color: hsl(166, 100%, 37%);
+        background-color: hsla(166, 100%, 37%,0.11);
+      }
+      .visual{
+        color: hsl(234, 85%, 45%);
+        background-color: hsla(234, 85%, 45%,0.11);
+      }
+
+      /* Button Css */
+      button{
+        margin-top: 30px;
+        justify-content: center;
+        padding: 15px;
+        color: white;
+        background-color: hsl(252, 100%, 67%);
+        border:none;
+        border-radius: 20px;
+        width: 450px;
+        font-size: 20px;
+      }
+
+      button:hover{
+        background-color: blueviolet;
+        transition: 0.5s;
+      }
+
+
+      .row{
+        display: flex;
+      }
+      .column{
+        border-radius: 20px;
+        flex:50%;
+        padding: 10px;
+        height: 500px;
+      }
+
+      /* Last text showing on the page */
+      .attribution{
+        margin-top: 75px;
+        text-align: center;
+        padding: 25px;
+      }
+
+      .attribution a{
+        color: hsl(252, 100%, 67%);
+      }
+
+      .attribution a:hover{
+        color: blue;
+      }
+
+      table{ 
+        border-spacing: 10px;
+        width: 70%;
+      }
+
+      td,tr{
+        border: 0px solid;
+        border-radius: 5px;
+        padding: 15px;
+      }
+
+  </style>
+</head>
+<body>
+
+<div class="row">
+  <!-- Column 1st -->
+  <div class="column" style="background-color:hsl(241, 58%, 53%);">
+    <h2 style="color: hsl(241, 100%, 89%);">Your Result</h2>
+      <!-- background circle -->
+    <div id="marks">
+      76
+    </div>
+
+    <div id="mark">
+      of 100
+    </div>
+
+    <p id="grt">Great</p>
+
+    <p id="para">You scored higher than 65% of the people
+       who have taken these tests. </p>
+  </div>
+
+  <!-- Column 2nd -->
+  <div class="column" style="background-color:white; box-shadow:5px 6px 8px 0px rgba(12,12,12,0.2); border:0px solid black; border-bottom-left-radius: 0; border-top-left-radius: 0;">
+    <h2 style="color: black;">Summary</h2>
+    <center>
+    <table>
+      <tr class="reaction">
+        <td colspan="2">
+          <img src="assets\images\icon-reaction.svg" alt="Reaction Img" style="padding-right: 15px; ">Reaction</td>
+        <td>80 / 100</td>
+      </tr>
+      
+      <tr class="memory">
+        <td colspan="2"><img src="assets\images\icon-memory.svg" alt="Memory Img" style="padding-right: 15px; ">Memory</td>
+        <td>92 / 100</td>
+      </tr>
+      
+      <tr class="verbal">
+        
+        <td colspan="2"><img src="assets\images\icon-verbal.svg" alt="Verbal Img" style="padding-right: 15px; ">Verbal</td>
+        <td>61 / 100</td>
+      </tr>
+      
+      <tr class="visual">
+        <td colspan="2"><img src="assets\images\icon-visual.svg" alt="Visual Img" style="padding-right: 15px;">Visual</td>
+        <td>72 / 100</td>
+      </tr>
+      
+    </table>
+    
+      <button>Continue</button>
+    </center>
+
+  </div>
+</div>  
+      
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/dashboard">Deepesh Agarwal</a>.
+  </div>
+
+</body>
+</html>
